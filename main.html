@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>Simraan Khatib</title>
 </head>
 <body>
-    
-    {% include "base/navbar.html" %}
+    {% include "navbar.html" %}
+    {% block content %}
+    {% comment %} code goes here {% endcomment %}
+    {% endblock content %}
 
-    {{% block content %}
-    <h1>main file</h1>
-    {% endblock content %}}
+
 </body>
 </html>
-
