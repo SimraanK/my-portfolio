@@ -378,6 +378,37 @@ ul.skills-itm > li {
     text-align: center;
 }
 
+.social-icns {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icns li {
+    padding-right: 30px;
+
+}
+
+.my-svgs {
+    fill: #000000;
+  }
+  
+  
+  .my-svgs:hover {
+    cursor: pointer;
+    animation: svgUpHover 0.1s ease-in-out;
+    -webkit-animation: svgUpHover 0.1s ease-in-out; 
+    -moz-animation: svgUpHover 0.1s ease-in-out; 
+  }
+  
+  @keyframes svgUpHover {
+    from { transform: translateY(0); } 
+    to { transform: translateY(-4px); } 
+  }
+
+  
+
+  
+
 
 .post-wrapper {
     display: grid;
@@ -469,6 +500,30 @@ ul.skills-itm > li {
 
 
 }
+
+#myBtn {
+    display: none; /* Hide initially */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* Ensure it's on top of other elements */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #333333 ; /* Black background */
+    color: white; /* White text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 14px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  /* Improved scroll behavior for smoother scrolling (fallback for no JS) */
+  html {
+    scroll-behavior: smooth; /* Enable smoother scrolling */
+  }
+  
+  
+  
 
 
 
