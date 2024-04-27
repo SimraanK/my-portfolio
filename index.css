@@ -426,10 +426,64 @@ ul.skills-itm > li {
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    /* box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5); */
+    align-self: normal;
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+
     
 }
 
-.thumbnail {
+.post:hover {
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+}
+
+div.post:hover .child{
+
+    /* box-shadow: 
+    5px 5px 5px rgba(0, 0, 0, 0.3),  /* Right-bottom shadow (darker) */
+   /* -5px -5px 5px rgba(0, 0, 0, 0.3); */
+    /* transition: box-shadow 0.5s ease-in-out; */ 
+    /* box-shadow: 3px 3px 6px 2px rgba(27, 27, 27, 0.712); */
+
+    transform: scale(1.05);
+    
+        
+
+
+}
+
+div.parent {
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* margin: 20px; */
+    overflow: hidden;
+    position: relative;
+    /* display: inline-block; */
+}
+
+div.child {
+    transition: all 1.1s;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+div.child.ai-app {
+    background-image: url(/assets/Images/CARD/AI\ APP.png);
+}
+div.child.space {
+    background-image: url(/assets/Images/CARD/Space\ Tourism.png);
+}
+div.child.imageg {
+    background-image: url(/assets/Images/CARD/ImageG.jpg);
+}
+
+img.thumbnail {
     display: block;
     width: 100%;
     height: 200px;
@@ -452,7 +506,20 @@ ul.skills-itm > li {
 .post-intro {
     color: #4b5156;
     font-size: 14px;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    min-height: 190px;
+    max-height: 190px;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
 }
+    
+    
 
 #contact-form {
     display: block;
