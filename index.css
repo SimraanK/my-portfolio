@@ -114,6 +114,7 @@ h1 {
     background-color: var(--secondaryColor);
     border: 1px solide var(--borderColor);
     border-radius: 5px 5px 0 0 ;
+    height: 44rem;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -210,11 +211,11 @@ a.contact-link {
 
     display: block;
     margin: 0 auto;
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    border: 2px solid var(--borderColor);
-    border-radius: 30% 0;
+    padding: 10px 0 20px 60px;
+
 }
 
 #theme-options-wrapper {
@@ -288,8 +289,7 @@ a.contact-link {
     grid-area: right-column;
     display: grid;
     align-content: center;
-    /* padding-top: 50px; */
-    padding-bottom: 100px;
+    padding: 85px 0 0 170px;
 } 
 
 
@@ -470,7 +470,7 @@ div.child {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    
+
 }
 
 div.child.ai-app {
