@@ -114,7 +114,7 @@ h1 {
     background-color: var(--secondaryColor);
     border: 1px solide var(--borderColor);
     border-radius: 5px 5px 0 0 ;
-    height: 44rem;
+    height: 49rem;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -211,10 +211,12 @@ a.contact-link {
 
     display: block;
     margin: 0 auto;
-    height: 100%;
-    width: 100%;
+    height: 119%;
+    width: 103%;
     object-fit: cover;
     padding: 10px 0 20px 60px;
+    min-width: 100%;
+    min-height: 100%;
 
 }
 
@@ -374,13 +376,14 @@ ul.skills-itm > li {
 
 .social-links {
     display: grid;
-    align-content: space-evenly;
+    align-content: center;
     text-align: center;
 }
 
 .social-icns {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .social-icns li {
@@ -607,7 +610,13 @@ img.thumbnail {
 
 @media screen and (max-width: 800px) {
     
-
+    #profile-pic{
+        padding: 0px;
+        width: 98%;
+        height: 85%;
+        min-width: 98%;
+        min-height: 85%;
+    }
     
     .intro-wrapper {
 
@@ -621,8 +630,13 @@ img.thumbnail {
         ;
     }
 
+    .intro-wrapper {
+        height: 60rem;
+    }
+
     .right-column {
         justify-content: center;
+        padding: 0px;
     }
 
 }
